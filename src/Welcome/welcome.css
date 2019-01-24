@@ -1,0 +1,10 @@
+.loginDiv {
+  position: absolute;
+  margin-left: 90%;
+  margin-top: -3.3%;
+}
+
+.loginBtn {
+  height: 4em;
+  width: 8em;
+}

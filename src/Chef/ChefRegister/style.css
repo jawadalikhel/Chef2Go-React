@@ -1,0 +1,25 @@
+#regForm {
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 5%;
+}
+
+.regTag {
+  margin-left: 10%;
+}
+
+.input {
+  padding: 1em;
+  width: 200%;
+  font-size: 1em;
+  margin: 1em;
+}
+
+.reg-btn {
+  position: absolute;
+  width: 10em;
+  height: 5em;
+  font-weight: bold;
+  margin-left: 100%;
+  margin-top: 10%;
+}
