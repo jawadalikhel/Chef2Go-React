@@ -1,0 +1,28 @@
+#form {
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 10%;
+}
+
+.input {
+  padding: 1em;
+  width: 200%;
+  font-size: 1em;
+  margin: 1em;
+}
+
+.login-btn {
+  position: absolute;
+  width: 10em;
+  height: 5em;
+  font-weight: bold;
+  margin-left: 50%;
+  margin-top: 10%;
+}
+
+#help-div {
+  /* background-color: red; */
+  position: absolute;
+  margin-left: 55%;
+  margin-top: 28%;
+}

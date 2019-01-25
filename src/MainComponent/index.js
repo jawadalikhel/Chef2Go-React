@@ -7,6 +7,10 @@ import ChefLogin from '../Chef/ChefLogin';
 import ChefRegister from '../Chef/ChefRegister';
 import ChefProfile from '../Chef/ChefProfile';
 
+import CoustomerLogin from '../Coustomer/Login';
+import CoustomerRegister from '../Coustomer/Register';
+import CoustomerProfile from '../Coustomer/Profile';
+
 class Main extends Component{
   render(){
     return(
@@ -18,6 +22,10 @@ class Main extends Component{
             <Route  path="/clogin" component={ChefLogin} />
             <Route  path="/cregister" component={ChefRegister} />
             <Route  path="/cprofile" component={ChefProfile} />
+
+            <Route  path="/login" component={CoustomerLogin} />
+            <Route  path="/register" component={CoustomerRegister} />
+            <Route  path="/profile" component={CoustomerProfile} />
           </Switch>
         </div>
       </div>
