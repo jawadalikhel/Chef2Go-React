@@ -14,13 +14,13 @@ https://trello.com/b/4Q8ACNlA/unit-2-project-chef-to-go
 
 
 ## Technologies used
-1. EJS and HTML5
-2. CSS
-3. JavaScript
+1. MongoDB and Mongoose
+2. Express.js
+3. React.js
 4. Node.js
-5. Express
-6. MongoDB and Mongoose
-7. Heroku (for deployment)
+5. HTML
+6. CSS
+7. BOOTSTRAP
 
 
 
