@@ -19,3 +19,10 @@
   margin-left: 50%;
   margin-top: 10%;
 }
+
+#help-div {
+  /* background-color: red; */
+  position: absolute;
+  margin-left: 55%;
+  margin-top: 28%;
+}

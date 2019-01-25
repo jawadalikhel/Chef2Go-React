@@ -8,7 +8,12 @@ class Welcome extends Component{
     return(
       <div>
         <div className="loginDiv">
-          <button className="loginBtn">Login</button>
+          <a href="/clogin">
+            <button className="loginBtn"> If you are a chef come joing!!</button>
+          </a>
+          <a href="/#">
+            <button className="loginBtn">Hire a chef!</button>
+          </a>
         </div>
       </div>
     )
