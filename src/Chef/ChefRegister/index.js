@@ -27,7 +27,7 @@ class Register extends Component {
       });
       const parsedResponse = await registerResponse.json();
       if(parsedResponse.data === 'registration successful'){
-        this.props.history.push('/cprofile')
+        this.props.history.push('/createcp')
         console.log('registration went successful')
       }
     } catch (err) {

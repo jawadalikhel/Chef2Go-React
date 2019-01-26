@@ -58,7 +58,7 @@ class Login extends Component {
         </form>
 
         <div id="help-div">
-          <a href="/cregister">create account</a><br/>
+          <a href="/createcp">create account</a><br/>
           <a href="/cNeedHelp">need help</a><br/>
         </div>
 

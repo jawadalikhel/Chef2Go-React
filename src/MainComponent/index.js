@@ -5,7 +5,8 @@ import Nav from '../Nav';
 import Welcome from '../Welcome';
 import ChefLogin from '../Chef/ChefLogin';
 import ChefRegister from '../Chef/ChefRegister';
-import ChefProfile from '../Chef/ChefProfile';
+import CreateChefProfile from '../Chef/CreateProfile';
+
 
 import CoustomerLogin from '../Coustomer/Login';
 import CoustomerRegister from '../Coustomer/Register';
@@ -21,7 +22,7 @@ class Main extends Component{
             <Route exact path="/" component={Welcome} />
             <Route  path="/clogin" component={ChefLogin} />
             <Route  path="/cregister" component={ChefRegister} />
-            <Route  path="/cprofile" component={ChefProfile} />
+            <Route  path="/createcp" component={CreateChefProfile} />
 
             <Route  path="/login" component={CoustomerLogin} />
             <Route  path="/register" component={CoustomerRegister} />
