@@ -6,7 +6,7 @@ import Welcome from '../Welcome';
 import ChefLogin from '../Chef/ChefLogin';
 import ChefRegister from '../Chef/ChefRegister';
 import CreateChefProfile from '../Chef/CreateProfile';
-
+import DisplayChefs from '../Chef/DisplayChefs';
 
 import CoustomerLogin from '../Coustomer/Login';
 import CoustomerRegister from '../Coustomer/Register';
@@ -23,6 +23,8 @@ class Main extends Component{
             <Route  path="/clogin" component={ChefLogin} />
             <Route  path="/cregister" component={ChefRegister} />
             <Route  path="/createcp" component={CreateChefProfile} />
+            <Route  path="/cdisplay" component={DisplayChefs} />
+
 
             <Route  path="/login" component={CoustomerLogin} />
             <Route  path="/register" component={CoustomerRegister} />

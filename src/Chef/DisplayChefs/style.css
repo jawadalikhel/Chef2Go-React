@@ -1,0 +1,28 @@
+.chefContainer {
+  background-color: #3F51B5;
+  position: ;
+  display: inline-block;
+  width: 20%;
+  height: 10%;
+  margin: 1em auto;
+  margin-left: 3.5em;
+  /* text-align: center; */
+  border: 1px solid black;
+  border-radius: 10%;
+  color: white;
+  padding-left: .8em;
+}
+
+/* .chefContainer {
+  background-color: #3F51B5;
+  position: ;
+  display: inline-block;
+  width: 20em;
+  height: 10em;
+  margin: 1em auto;
+  margin-left: 3.5em;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10%;
+  color: white;
+} */
