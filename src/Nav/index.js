@@ -16,7 +16,7 @@ class Nav extends Component{
         <AppBar position="static">
           <Toolbar>
             <Typography variant="h6" color="inherit">
-              Chef2Go
+              <a href="/" className="gpHme-btn">Chef2Go</a>
             </Typography>
           </Toolbar>
         </AppBar>

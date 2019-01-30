@@ -1,0 +1,19 @@
+.chefProfile {
+  background-color: red;
+  width: 200em;
+  position: absolute;
+}
+
+.chefProfile {
+  background-color: ;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top:2%;
+  font-size: 1.3em;
+}
+
+.chefImag {
+  width: 22%;
+}

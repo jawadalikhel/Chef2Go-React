@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './style.css';
+import './login.css';
 
 class Login extends Component {
   constructor(){
@@ -7,7 +7,6 @@ class Login extends Component {
     this.state = {
       username: '',
       password: '',
-      occupation: 'chef'
     }
   }
 
@@ -28,7 +27,7 @@ class Login extends Component {
       const parsedResponse = await loginResponse.json();
       console.log(parsedResponse, ' this is our parsed data at login');
       if(parsedResponse.data === 'login successful'){
-        this.props.history.push('/');
+        this.props.history.push('/cosprofile');
         console.log('going to welcome page')
       } else if(parsedResponse.data === 'username wrong'){
         alert('Incorrect Username. please try again or register');
@@ -52,8 +51,8 @@ class Login extends Component {
 
         <form id="form" onSubmit={this.handleSubmit}>
           <h1>Welcome chef, Login here</h1>
-          <input type="text" onChange={this.handleChange} name="username" className="input" placeholder="username" /><br/>
-          <input type="password" onChange={this.handleChange} name="password" className="input" placeholder="password" /><br/>
+          <input type="text" onChange={this.handleChange} name="username" className="" placeholder="username" /><br/>
+          <input type="password" onChange={this.handleChange} name="password" className="" placeholder="password" /><br/>
           <button className="login-btn">Login</button>
         </form>
 

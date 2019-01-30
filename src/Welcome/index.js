@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import DisplayChef from '../Chef/DisplayChefs';
+import DisplayChef from '../Chef/DisplayAllChefs';
 import './welcome.css';
 
 
@@ -22,6 +22,7 @@ class Welcome extends Component{
     });
 
     const parsedResponse = await showChefs.json();
+    console.log(parsedResponse, 'Mirza');
     return parsedResponse;
 
     console.log(parsedResponse, 'these are chefs ')
@@ -40,18 +41,35 @@ class Welcome extends Component{
   render(){
     return(
       <div>
-        <div className="loginDiv">
+
+        <div className="">
           <a href="/clogin">
-            <button className="loginBtn"> If you are a chef come joing!!</button>
+            <button className=""> If you are a chef come joing!!</button>
           </a>
-          <a href="/#">
-            <button className="loginBtn">Hire a chef!</button>
+        </div><br/>
+
+        <div>
+          <a href="/cregister">
+            <button className=""> Become a chef</button>
           </a>
         </div>
 
-        <div id="displayChef">
+        <div>
+          <a href="/login">
+            <button className="">Hire a chef!</button>
+          </a>
+        </div>
+
+        <div>
+          <a href="/register">
+            <button className="">Register to Hire a chef!</button>
+          </a>
+        </div>
+
+        <div id="">
           <DisplayChef chefs={this.state.chefs} />
         </div>
+
       </div>
     )
   }

@@ -1,17 +1,17 @@
-#form {
+#Cosform {
   position: absolute;
   margin-left: 35%;
   margin-top: 10%;
 }
 
-.input {
+.Cosinput {
   padding: 1em;
   width: 100%;
   font-size: 1em;
   margin: 1em;
 }
 
-.login-btn {
+.Coslogin-btn {
   position: absolute;
   width: 25%;
   height: 25%;
@@ -20,7 +20,7 @@
   margin-top: 10%;
 }
 
-#help-div {
+#Coshelp-div {
   background-color: ;
   position: absolute;
   margin-left: 35em;

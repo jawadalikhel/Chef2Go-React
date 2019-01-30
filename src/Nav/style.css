@@ -11,3 +11,9 @@
   padding: 1%;
   background-color: red;
 }
+
+.gpHme-btn {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+}

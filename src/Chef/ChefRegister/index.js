@@ -27,7 +27,7 @@ class Register extends Component {
       });
       const parsedResponse = await registerResponse.json();
       if(parsedResponse.data === 'registration successful'){
-        this.props.history.push('/createcp')
+        this.props.history.push('/')
         console.log('registration went successful')
       }
     } catch (err) {
@@ -45,17 +45,27 @@ class Register extends Component {
     return(
       <div>
         <form id="regForm" onSubmit={this.handleSubmit}>
-          <h1 className="regTag">Welcome Chef Register Here</h1>
-          <input type="text" onChange={this.handleChange} name="email" className="input" placeholder="Email" /><br/>
-          <input type="text" onChange={this.handleChange} name="username" className="input" placeholder="username: " /><br/>
-          <input type="password" onChange={this.handleChange} name="password" className="input" placeholder="password: " /><br/>
-          <button className="reg-btn">Register</button>
+          <h1 className="regTag1">Welcome Chef Register Here</h1><br/><br/><br/>
+          <div className="inputInfo">
+            <h2 className="regTag2">About You</h2>
+            <input type="text" onChange={this.handleChange} name="picture" className="input" placeholder="upload a picture of yourself: " /><br/>
+            <input type="text" onChange={this.handleChange} name="experience" className="input" placeholder="Enter you experience:" /><br/>
+            <input type="text" onChange={this.handleChange} name="about" className="input" placeholder="say something about yourself: " /><br/>
+
+            <h2 className="regTag3">Menu Of The Week</h2>
+            <input type="text" onChange={this.handleChange} name="starter" className="input" placeholder="Starter: " /><br/>
+            <input type="text" onChange={this.handleChange} name="main" className="input" placeholder="Main: " /><br/>
+            <input type="text" onChange={this.handleChange} name="dessert" className="input" placeholder="Dessert: " /><br/>
+            <input type="text" onChange={this.handleChange} name="drink" className="input" placeholder="Drink: " /><br/>
+
+            <input type="text" onChange={this.handleChange} name="email" className="input" placeholder="Email" /><br/>
+            <input type="text" onChange={this.handleChange} name="username" className="input" placeholder="username: " /><br/>
+            <input type="password" onChange={this.handleChange} name="password" className="input" placeholder="password: " /><br/>
+            <button className="reg-btn">Register</button>
+          </div>
         </form>
       </div>
     )
   }
 }
 export default Register;
-// <input type="text" onChange={this.handleChange} name="fullname" className="input" placeholder="Fullname: " /><br/>
-// <input type="text" onChange={this.handleChange} name="address" className="input" placeholder="Address: " /><br/>
-// <input type="text" onChange={this.handleChange} name="phone" className="input" placeholder="Phone: " /><br/>
