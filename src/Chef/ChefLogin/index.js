@@ -32,7 +32,7 @@ class Login extends Component {
       })
 
       if(parsedResponse.data === 'login successful'){
-        this.props.history.push('/');
+        this.props.history.push('/cprofile'  + this.props.match.url);
         console.log('going to welcome page')
       } else if(parsedResponse.data === 'username wrong'){
         alert('Incorrect Username. please try again or register');

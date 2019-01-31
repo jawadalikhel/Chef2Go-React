@@ -10,7 +10,7 @@ import ChefRegister from '../Chef/ChefRegister';
 import CreateChefProfile from '../Chef/CreateProfile';
 import DisplayChefs from '../Chef/DisplayAllChefs';
 import ShowChef from '../Chef/ShowPage';
-import EditChef from '../Chef/EditProfile';
+import ChefProfile from '../Chef/ChefProfile';
 
 
 import CoustomerLogin from '../Coustomer/CoustomerLogin';
@@ -29,6 +29,8 @@ class Main extends Component{
             <Route  path="/clogin" component={ChefLogin} />
             <Route  path="/cregister" component={ChefRegister} />
             <Route  path="/cdisplay" component={DisplayChefs} />
+            <Route  path="/cprofile" component={ChefProfile} />
+
 
             <Route  path="/login" component={CoustomerLogin} />
             <Route  path="/register" component={CoustomerRegister} />
@@ -36,7 +38,6 @@ class Main extends Component{
             <Route path="/application" component={CoustomerApplication} />
 
             <Route  path="/:id" component={ShowChef} />
-            <Route  path="/editC" component={EditChef} />
 
           </Switch>
         </div>
