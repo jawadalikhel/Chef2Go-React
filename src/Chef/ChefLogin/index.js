@@ -27,6 +27,10 @@ class Login extends Component {
 
       const parsedResponse = await loginResponse.json();
       console.log(parsedResponse, ' this is our parsed data at login');
+      this.setState({
+        createdPostId: parsedResponse.data
+      })
+
       if(parsedResponse.data === 'login successful'){
         this.props.history.push('/');
         console.log('going to welcome page')

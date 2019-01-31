@@ -29,7 +29,7 @@ class Register extends Component {
 
       const parsedResponse = await registerResponse.json();
       if(parsedResponse.data === 'registration successful'){
-        this.props.history.push('/')
+        this.props.history.push('/application')
       } else {
         console.log('error in coustomer registeration')
       }

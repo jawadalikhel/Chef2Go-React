@@ -27,7 +27,7 @@ class Login extends Component {
       const parsedResponse = await loginResponse.json();
       console.log(parsedResponse, ' this is our parsed data at login');
       if(parsedResponse.data === 'login successful'){
-        this.props.history.push('/cosprofile');
+        this.props.history.push('/application');
         console.log('going to welcome page')
       } else if(parsedResponse.data === 'username wrong'){
         alert('Incorrect Username. please try again or register');
@@ -50,14 +50,14 @@ class Login extends Component {
       <div>
 
         <form id="form" onSubmit={this.handleSubmit}>
-          <h1>Welcome chef, Login here</h1>
+          <h1>Welcome, Login here to hire a chef</h1>
           <input type="text" onChange={this.handleChange} name="username" className="" placeholder="username" /><br/>
           <input type="password" onChange={this.handleChange} name="password" className="" placeholder="password" /><br/>
           <button className="login-btn">Login</button>
         </form>
 
         <div >
-          <a id="help-div" href="/cregister">create account</a><br/>
+          <a id="help-div" href="/register">create account</a><br/>
           <a id="help-div" href="/cNeedHelp">need help</a>
         </div>
 

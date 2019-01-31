@@ -13,7 +13,7 @@ class Welcome extends Component{
   }
 
   getChef = async () =>{
-    const showChefs = await fetch('http://localhost:9000/chef/allChefs', {
+    const showChefs = await fetch('http://localhost:9000/chef/chefs', {
       method: 'GET',
       credentials: 'include',
       headers: {
@@ -44,27 +44,16 @@ class Welcome extends Component{
 
         <div className="">
           <a href="/clogin">
-            <button className=""> If you are a chef come joing!!</button>
+            <button className=""> Chef Login</button>
           </a>
         </div><br/>
 
         <div>
-          <a href="/cregister">
-            <button className=""> Become a chef</button>
-          </a>
-        </div>
-
-        <div>
           <a href="/login">
-            <button className="">Hire a chef!</button>
+            <button className="">Coustomer Login</button>
           </a>
         </div>
 
-        <div>
-          <a href="/register">
-            <button className="">Register to Hire a chef!</button>
-          </a>
-        </div>
 
         <div id="">
           <DisplayChef chefs={this.state.chefs} />

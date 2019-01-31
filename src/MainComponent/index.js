@@ -16,6 +16,7 @@ import EditChef from '../Chef/EditProfile';
 import CoustomerLogin from '../Coustomer/CoustomerLogin';
 import CoustomerRegister from '../Coustomer/CoustomerRegister';
 import CoustomerProfile from '../Coustomer/CoustomerProfile';
+import CoustomerApplication from '../Coustomer/Application';
 
 class Main extends Component{
   render(){
@@ -32,6 +33,7 @@ class Main extends Component{
             <Route  path="/login" component={CoustomerLogin} />
             <Route  path="/register" component={CoustomerRegister} />
             <Route path="/cosprofile" component={CoustomerProfile} />
+            <Route path="/application" component={CoustomerApplication} />
 
             <Route  path="/:id" component={ShowChef} />
             <Route  path="/editC" component={EditChef} />

@@ -10,7 +10,7 @@ class ShowPage extends Component{
     }
   }
   getList = async () =>{
-    const list = await fetch('http://localhost:9000/chef/' + this.props.match.url);
+    const list = await fetch('http://localhost:9000/chef/chefs' + this.props.match.url);
 
     const listParsedJson = await list.json();
     return listParsedJson;

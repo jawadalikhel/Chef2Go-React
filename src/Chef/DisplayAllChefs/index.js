@@ -8,8 +8,8 @@ class DisplayChefs extends Component{
     const showChefs = this.props.chefs.map((chef, i) =>{
       console.log(showChefs)
       return(
-        <div className="chef">
-          <Link to={'/' + chef._id} className="" key={chef._id}>
+        <div className="chef" key={chef._id}>
+          <Link to={'/' + chef._id} className="">
             <img className="chefImg" src={chef.picture}/>
             <p className="">This is chef {chef.username}</p>
           </Link>
