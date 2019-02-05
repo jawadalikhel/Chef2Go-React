@@ -26,7 +26,7 @@ class Login extends Component {
 
       const parsedResponse = await loginResponse.json();
       console.log(parsedResponse, ' this is our parsed data at login');
-      if(parsedResponse.data === 'login successful'){
+      if(parsedResponse.data === 'login successfu'){
         this.props.history.push('/application');
         console.log('going to welcome page')
       } else if(parsedResponse.data === 'username wrong'){
@@ -35,7 +35,7 @@ class Login extends Component {
         alert('Incorrect Password')
       }
     } catch (err) {
-      console.log(err,' error in handleSubmit login')
+      console.log(err.message,' error in handleSubmit login')
     }
   }
 

@@ -19,28 +19,26 @@ class Login extends Component {
           method: 'POST',
           credentials: 'include',
           body: JSON.stringify(this.state),
-          headers:{
+          headers: {
             'Content-Type': 'application/json'
-            }
+          }
         });
       console.log(loginResponse, ' this is loginResponse')
 
       const parsedResponse = await loginResponse.json();
       console.log(parsedResponse, ' this is our parsed data at login');
-      this.setState({
-        createdPostId: parsedResponse.data
-      })
+      if(parsedResponse.data.message === 'login successful'){
 
-      if(parsedResponse.data === 'login successful'){
-        this.props.history.push('/cprofile'  + this.props.match.url);
-        console.log('going to welcome page')
+        console.log('/cprofile/' + parsedResponse.data.id, '<--- this is the id profile after login')
+        this.props.history.push('/cprofile/' + parsedResponse.data.id)
+
       } else if(parsedResponse.data === 'username wrong'){
         alert('Incorrect Username. please try again or register');
       } else if(parsedResponse.data === 'password wrong'){
         alert('Incorrect Password')
       }
     } catch (err) {
-      console.log(err,' error in handleSubmit login')
+      console.log(err.message,' error in handleSubmit login')
     }
   }
 

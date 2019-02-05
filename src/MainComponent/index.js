@@ -11,6 +11,7 @@ import CreateChefProfile from '../Chef/CreateProfile';
 import DisplayChefs from '../Chef/DisplayAllChefs';
 import ShowChef from '../Chef/ShowPage';
 import ChefProfile from '../Chef/ChefProfile';
+import ChefEditProfile from '../Chef/ChefEditProfile';
 
 
 import CoustomerLogin from '../Coustomer/CoustomerLogin';
@@ -29,9 +30,10 @@ class Main extends Component{
             <Route  path="/clogin" component={ChefLogin} />
             <Route  path="/cregister" component={ChefRegister} />
             <Route  path="/cdisplay" component={DisplayChefs} />
-            <Route  path="/cprofile" component={ChefProfile} />
 
+            <Route  path="/cprofile/:id" component={ChefProfile} />
 
+            <Route  path="/cedit" component={ChefEditProfile} />
             <Route  path="/login" component={CoustomerLogin} />
             <Route  path="/register" component={CoustomerRegister} />
             <Route path="/cosprofile" component={CoustomerProfile} />

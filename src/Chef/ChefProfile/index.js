@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import List from '../List';
 
-class ShowPage extends Component{
+class ChefProfile extends Component{
   constructor(){
     super();
     this.state = {
@@ -10,11 +10,11 @@ class ShowPage extends Component{
     }
   }
   getList = async () =>{
-    const list = await fetch('http://localhost:9000/chef/chefs' + this.props.match.url);
+    const list = await fetch('http://localhost:9000' + this.props.match.url);
     console.log(list, ' this is list ')
     const listParsedJson = await list.json();
+    console.log(listParsedJson, ' this is listParsedJson in ChefProfile')
     return listParsedJson;
-    console.log(listParsedJson, ' this is listParsedJson for chefProfile')
   }
 
   componentDidMount(){
@@ -22,16 +22,16 @@ class ShowPage extends Component{
       console.log(list.data, ' this is list');
       this.setState({list: list.data, dataLoaded: true})
     }).catch((err) =>{
-      console.log(err, 'error in componentDidMoun in ShowPage')
+      console.log(err, 'error in componentDidMoun in ChefProfile')
     })
   }
   render(){
     console.log(this.props.match.url, "the props mathched the url")
     return(
       <div>
-        {this.state.dataLoaded ? <List data={this.state.list} /> : null}
+        hi
       </div>
     )
   }
 }
-export default ShowPage;
+export default ChefProfile;

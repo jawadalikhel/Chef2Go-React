@@ -25,6 +25,7 @@ class Register extends Component {
           'Content-Type': 'application/json'
         }
       });
+      console.log(registerResponse, ' this is registerResponse ')
       const parsedResponse = await registerResponse.json();
       if(parsedResponse.data === 'registration successful'){
         this.props.history.push('/')
