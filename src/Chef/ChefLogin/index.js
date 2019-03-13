@@ -23,14 +23,14 @@ class Login extends Component {
             'Content-Type': 'application/json'
           }
         });
+        console.log(' before ZILCH')
       console.log(loginResponse, ' this is loginResponse')
+      console.log('ZILCH')
 
       const parsedResponse = await loginResponse.json();
-      console.log(parsedResponse, ' this is our parsed data at login');
-      if(parsedResponse.data.message === 'login successful'){
-
-        console.log('/cprofile/' + parsedResponse.data.id, '<--- this is the id profile after login')
-        this.props.history.push('/cprofile/' + parsedResponse.data.id)
+      console.log(parsedResponse, ' this is our parsed data at loginnnn');
+      if(parsedResponse.data === 'login successful'){
+        this.props.history.push('/cprofile')
 
       } else if(parsedResponse.data === 'username wrong'){
         alert('Incorrect Username. please try again or register');

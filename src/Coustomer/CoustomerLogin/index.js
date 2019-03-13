@@ -22,7 +22,8 @@ class Login extends Component {
             'Content-Type': 'application/json'
             }
         });
-      console.log(loginResponse, ' this is loginResponse')
+      console.log(loginResponse, ' this is loginRespons')
+      console.log('ZILCH')
 
       const parsedResponse = await loginResponse.json();
       console.log(parsedResponse, ' this is our parsed data at login');

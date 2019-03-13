@@ -31,7 +31,7 @@ class Main extends Component{
             <Route  path="/cregister" component={ChefRegister} />
             <Route  path="/cdisplay" component={DisplayChefs} />
 
-            <Route  path="/cprofile/:id" component={ChefProfile} />
+            <Route  path="/cprofile" component={ChefProfile} />
 
             <Route  path="/cedit" component={ChefEditProfile} />
             <Route  path="/login" component={CoustomerLogin} />
@@ -39,7 +39,6 @@ class Main extends Component{
             <Route path="/cosprofile" component={CoustomerProfile} />
             <Route path="/application" component={CoustomerApplication} />
 
-            <Route  path="/:id" component={ShowChef} />
 
           </Switch>
         </div>
